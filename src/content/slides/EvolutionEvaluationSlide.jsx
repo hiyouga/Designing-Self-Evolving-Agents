@@ -63,11 +63,11 @@ export function EvolutionEvaluationSlide({ locale }) {
           <div className="evaluation-harness-node">
             <span>{t.harnessTitle}</span>
           </div>
-          <svg className="evaluation-harness-claw" viewBox="0 0 180 96" aria-hidden="true">
-            <path className="evaluation-harness-claw__wrist" d="M 90 0 L 90 46" />
-            <path d="M 90 46 L 66 70 L 76 80" />
-            <path d="M 90 46 L 90 84" />
-            <path d="M 90 46 L 114 70 L 104 80" />
+          <svg className="evaluation-harness-claw" viewBox="0 0 1360 390" aria-hidden="true">
+            <path className="evaluation-harness-claw__wrist" d="M 680 126 L 680 161.5" />
+            <path d="M 680 161.5 L 661.3 180 L 669.1 187.7" />
+            <path d="M 680 161.5 L 680 190.8" />
+            <path d="M 680 161.5 L 698.7 180 L 690.9 187.7" />
           </svg>
 
           <div className="evaluation-controlled-boundary" aria-hidden="true" />

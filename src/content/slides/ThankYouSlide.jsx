@@ -13,7 +13,7 @@ export function ThankYouSlide({ locale }) {
   return (
     <div className="thank-you-slide">
       <div className="thank-you-slide__content">
-        <h1 className="thank-you-slide__title">Thank You</h1>
+        <h1 className="thank-you-slide__title">Thank you</h1>
       </div>
 
       <div className="thank-you-slide__contacts" aria-label="Contact links">
