@@ -429,7 +429,7 @@ button {
   left: -0.08em;
   height: 0.28em;
   border-radius: 999px;
-  background: color-mix(in srgb, #f3df4d 82%, transparent);
+  background: rgba(243, 223, 77, 0.82);
   content: "";
 }
 
@@ -798,7 +798,7 @@ button {
   left: 0;
   width: 500px;
   height: 560px;
-  color: #1a1f1d;
+  color: var(--text);
   pointer-events: none;
 }
 
@@ -1196,9 +1196,6 @@ button {
 }
 
 .engineering-left-brace {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 96px;
   height: 320px;
   color: var(--text);
@@ -1206,14 +1203,12 @@ button {
   overflow: visible;
 }
 
-.engineering-left-brace span {
-  display: block;
-  font-family: "Helvetica Neue", Arial, sans-serif;
-  font-size: 326px;
-  font-weight: 100;
-  line-height: 0.76;
-  transform: translateX(-10px) scaleX(0.82);
-  transform-origin: center;
+.engineering-left-brace path {
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 6;
 }
 
 .engineering-component-list {
@@ -1729,12 +1724,12 @@ button {
 .evaluation-harness-claw {
   position: absolute;
   z-index: 4;
-  top: 126px;
-  left: 610px;
-  width: 140px;
-  height: 74px;
-  color: #1a1f1d;
-  overflow: visible;
+  top: 0;
+  left: 0;
+  width: 1360px;
+  height: 390px;
+  color: var(--text);
+  overflow: hidden;
   pointer-events: none;
 }
 
@@ -1743,12 +1738,12 @@ button {
   stroke: currentColor;
   stroke-linecap: square;
   stroke-linejoin: round;
-  stroke-width: 3.4;
+  stroke-width: 2.7;
   opacity: 0.9;
 }
 
 .evaluation-harness-claw__wrist {
-  stroke-width: 4.2;
+  stroke-width: 3.3;
 }
 
 .evaluation-controlled-boundary {

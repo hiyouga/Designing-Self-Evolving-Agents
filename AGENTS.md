@@ -39,6 +39,11 @@ This is the presentation framework layer. It owns the slide shell, scaling, navi
 - `ExportDeck.jsx`: Hidden full-deck renderer used by PDF export.
 - `exportPdf.js`: Clones each slide into a temporary render stage, converts it to JPG with `html2canvas`, then combines the images into a PDF with `jspdf`.
 
+## PDF Export Notes
+
+- Avoid modern CSS color functions in export-visible pseudo-elements because `html2canvas` cannot reliably parse computed values such as `color(srgb ...)`; use `rgb(...)`, `rgba(...)`, or hex instead.
+- Avoid small standalone SVG connector graphics in export-visible slide content because `html2canvas` may drop them during PDF export; prefer full-region SVG overlays with paths positioned in the shared viewBox
+
 ## `src/content/`
 
 This is the slide content layer. It owns the concrete slide pages and their copy.

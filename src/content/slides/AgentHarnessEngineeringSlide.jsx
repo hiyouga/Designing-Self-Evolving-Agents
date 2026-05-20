@@ -48,9 +48,9 @@ export function AgentHarnessEngineeringSlide({ locale }) {
 
         <figure className="engineering-brace-map" aria-label={t.title}>
           <div className="engineering-agent-label">{t.agentLabel}</div>
-          <div className="engineering-left-brace" aria-hidden="true">
-            <span>{"{"}</span>
-          </div>
+          <svg className="engineering-left-brace" viewBox="0 0 96 320" aria-hidden="true" focusable="false">
+            <path d="M 76 10 C 38 10 30 42 30 91 C 30 132 18 151 8 160 C 18 169 30 188 30 229 C 30 278 38 310 76 310" />
+          </svg>
           <div className="engineering-component-list">
             {t.components.map((component) => (
               <div className={`engineering-component-row engineering-component-row--${component.key}`} key={component.key}>

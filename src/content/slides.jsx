@@ -80,7 +80,7 @@ export const slides = [
     id: "thank-you",
     title: {
       zh: "thank you",
-      en: "Thank You",
+      en: "Thank you",
     },
     kind: "closing",
     component: ThankYouSlide,
